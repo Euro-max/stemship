@@ -1,113 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A website dedicated to the fascinating world of mathematics and programming">
-    <meta name="keywords" content="programming,mathematics,problems,puzzles">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A website dedicated to the fascinating world of mathematics and programming"
+    />
+    <meta name="keywords" content="programming,mathematics,problems,puzzles" />
     <title>About - October Math Gems</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/logo.jpeg">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.jpeg">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.jpeg">
-    <meta name="theme-color" content="#ffffff">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo.jpeg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.jpeg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.jpeg" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <style>
-      .nav-link, .navbar-brand
-      {
-          color: black;
+      .nav-link,
+      .navbar-brand {
+        color: black;
       }
     </style>
   </head>
-<body>
-    <header class="container">
-      
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            October Math Gems</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class=" nav nav-tabs navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="archives.html">Archives</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="journals.html">Journals</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="recent.html">Recent</a>
-              </li>
-              
-              </li>
-            </ul>
-          </div>
+
+  <body>
+    <!--Loader Part-->
+    <div class="loader-container">
+      <div id="global">
+        <div class="mask" id="top">
+          <div class="plane"></div>
         </div>
-      </nav>
-    </header>
-    <div id="content" class="container">
-      <div id="about_page">
-        <img src="images/logo.jpeg" alt="Logo" class="float-end rounded w-25" >
-        <h3>What is Math Gems Festoon?
-        </h3>
-        <p>Math Gems Festoon is a great opportunity for those wanting to sharpen their problem-solving skills by introducing carefully chosen sets of problems, ranging in difficulty from newcomers level to that of world-class solvers.</p>
-        
-        <p>Nevertheless, the Math Gems Festoon not only includes weekly problem sets but also daily selections that help you keep the flame up.</p>
-        <h3>Can anyone solve the problems?</h3>
-        <p> Problems range widely in difficulty, from basic algebra to challenging math contests questions. However, the problems are designed to require minimal prior knowledge when possible and focus more on knowing how to apply basic tools creatively to get unexpected results. While you may not be able to solve all problems in your first visit, you will certainly improve after trying many! </p>
-          <h3>How can I see my improvement?</h3>
-          <p>Our score-leaderboard system also offers you the opportunity to see how you rank amongst others and observe your improvement over time.</p>
-        
-          <p>Detailed solutions for our problems are published afterwards to ensure that everyone benefits from both his trial and the solution elegance. We also share collections of textbooks and references giving you the essential tools in your journey.</p>
-          <h3>Where can I find more problem-solving sources?</h3>
-          <p>You can find many POTWs and special handouts exclusively on our Telegram channel,
-            <a href="https://t.me/stemship" target="_blank">https://t.me/stemship</a>
-            .Moreover, we mention references and websites we recommend checking from time to time.</p>
-          </div></div> <!--end_content-->
-          </div> <!--end_container-->
-  
-          
+        <div class="mask" id="middle-top">
+          <div class="plane"></div>
+        </div>
+        <div class="mask" id="middle-down">
+          <div class="plane"></div>
+        </div>
+        <div class="mask" id="bottom">
+          <div class="plane"></div>
+          <br>
+        </div>
+      </div>
     </div>
-    <script src="bootstrap.js">
+    <!--Loader Part-->
+    <div class="content-container">
+      <div id="WOW">
+        <header class="container">
+          <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"> October Math Gems</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+                <i class="fa fa-bars" style="color: black" , width:17px></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav nav-tabs navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="index.html"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="archives.html">Archives</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="journals.html">Journals</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="recent.html">Recent</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <h1 class="Mod">Welcome to Maths,the purest of all sciences</h1>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="containere">
+                <br /><br /><br /><br /><br /><br />
+                <h2 class="chess">
+                  Mathematics is not about numbers,equations,computations,or
+                  algorithms:It is about UNDERSTANDING. "William Paul Thurtson"
+                </h2>
+                <br />
+              </div>
+            </div>
+            <!-- <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="..." />
+            </div> -->
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- </div> -->
+      <!-- </div> -->
+      <div id="content" class="container">
+        <div id="about_page">
+          <img
+            src="images/logo.jpeg"
+            alt="Logo"
+            class="float-end rounded w-25"
+          />
+          <h3 class="Common">What is Math Gems Festoon?</h3>
+          <p>
+            Math Gems Festoon is a great opportunity for those wanting to
+            sharpen their problem-solving skills by introducing carefully chosen
+            sets of problems, ranging in difficulty from newcomers level to that
+            of world-class solvers.
+          </p>
+
+          <p>
+            Nevertheless, the Math Gems Festoon not only includes weekly problem
+            sets but also daily selections that help you keep the flame up.
+          </p>
+          <h3 class="Common">Can anyone solve the problems?</h3>
+          <p>
+            Problems range widely in difficulty, from basic algebra to
+            challenging math contests questions. However, the problems are
+            designed to require minimal prior knowledge when possible and focus
+            more on knowing how to apply basic tools creatively to get
+            unexpected results. While you may not be able to solve all problems
+            in your first visit, you will certainly improve after trying many!
+          </p>
+          <h3 class="Common">How can I see my improvement?</h3>
+          <p>
+            Our score-leaderboard system also offers you the opportunity to see
+            how you rank amongst others and observe your improvement over time.
+          </p>
+
+          <p>
+            Detailed solutions for our problems are published afterwards to
+            ensure that everyone benefits from both his trial and the solution
+            elegance. We also share collections of textbooks and references
+            giving you the essential tools in your journey.
+          </p>
+          <h3 class="Common">Where can I find more problem-solving sources?</h3>
+          <p>
+            You can find many POTWs and special handouts exclusively on our
+            Telegram channel,
+            .Moreover, we mention references and websites we recommend checking
+            from time to time.
+          </p>
+          <a class="button" style="display:block;font-size:16px;font-weight:500;text-align:center;border-radius:0.7px;padding:3px;background:#389ce9;text-decoration:none;color:#fff;" href="https://t.me/MathSolvers_1" target="_blank"><svg style="width:20px;height:30px;vertical-align:middle;margin:0px 5px;" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Go to our channel</a>
+        </div>
+      </div>
+      <!--end_content-->
+      <!-- </div> end_container -->
+
+      <!-- </div> -->
+      <br /><br />
+      <div class="cards contact" id="contact">
+        <h2 class="title">Let's work together</h2>
+        <div class="text-center">
+          <h2>Get in touch</h2>
+          <p class="lead">Questions? Do not hesitate to contact us. <br>If you have suggestions regarding the website or inquiry about the club in general. Contact the Web Master at ahmed2005stem@gmail.com</p>
+        </div>
+        <form
+          action="https://postmail.invotes.com/send"
+          method="post"
+          id="email_form"
+        >
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              name="subject"
+              required="required"
+              placeholder="Your Email"
+            />
+          </div>
+          <br /><br />
+          <div class="form-group">
+            <textarea
+              required="required"
+              name="text"
+              class="form-control"
+              style="min-height: 150px"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <input
+            type="hidden"
+            name="access_token"
+            value="rhl5m3vwd6qax4wr0q8p6hz4"
+          />
+          <br><br>
+          <div class="form-group">
+            <input
+              id="submit_form"
+              type="submit"
+              class="btn btn-block btn-lg btn-primary"
+              value="send"
+            />
+          </div>
+        </form>
+        <!-- </section> -->
+        <footer class="footer">
           
+          <p class="footer-title">
+            Developed by: <span> Maths Gems Web Branch</span>
+          </p>
+          
+            <p class="jh">
+              Web Developers: Ahmed Wael | Ahmed Shalaby | Hassan
+              <br>UI/UX: Mahmoud Essam
+            </p>
+            
+            
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- </body> -->
+    <script src="bootstrap.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script type="application/json" id="page_expire">
+      86400
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script type="application/json" id="page_expire">86400</script>
     <script>
-        function submit_timeout() {
-            var inputs = document.getElementsByTagName("input");
-            for (var i = 0; i < inputs.length; i++) {
-               if (inputs[i].type === "submit" || inputs[i].type === "image") {
-                  inputs[i].onclick = function() {modal.style.display = "block";return false;};
-               }
-            }
-         }
-         var page_expire = 1000 * parseInt(document.getElementById('page_expire').innerHTML);
-         setTimeout(submit_timeout, page_expire);
-         var modal = document.getElementById("modal_window");
-         window.onclick = function(event) {
-            if (event.target == modal) {
-               modal.style.display = "none";
-            }
-         }
-         function toggle_navigation() {
-            if (navIcon.className == "fas fa-bars") {
-               navIcon.className = "fas fa-times";
-            } else {
-               navIcon.className = "fas fa-bars";
-            }
-         }
-         const navIcon = document.getElementById("nav_toggle_icon");
-         const navToggle = document.getElementById("nav_toggle");
-         navToggle.addEventListener("click", toggle_navigation);
-         
+      function submit_timeout() {
+        var inputs = document.getElementsByTagName("input");
+        for (var i = 0; i < inputs.length; i++) {
+          if (inputs[i].type === "submit" || inputs[i].type === "image") {
+            inputs[i].onclick = function () {
+              modal.style.display = "block";
+              return false;
+            };
+          }
+        }
+      }
+      var page_expire =
+        1000 * parseInt(document.getElementById("page_expire").innerHTML);
+      setTimeout(submit_timeout, page_expire);
+      var modal = document.getElementById("modal_window");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+      function toggle_navigation() {
+        if (navIcon.className == "fas fa-bars") {
+          navIcon.className = "fas fa-times";
+        } else {
+          navIcon.className = "fas fa-bars";
+        }
+      }
+      const navIcon = document.getElementById("nav_toggle_icon");
+      const navToggle = document.getElementById("nav_toggle");
+      navToggle.addEventListener("click", toggle_navigation);
+    </script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+      $(window).load(function () {
+        $(".loader-container").delay(3000).fadeOut("slow");
+        $(".content-container").delay(3000).fadeIn("slow");
+      });
     </script>
   </body>
 </html>
