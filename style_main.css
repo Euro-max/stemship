@@ -49,6 +49,9 @@
     background-color: var(--color-background-default);
     color: var(--color-text-default);
  }
+ .navbar-brand{
+   font-family: Cera Pro black;
+ }
  
  /* Generic overrides */
  img {
