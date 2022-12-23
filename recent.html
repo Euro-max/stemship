@@ -21,6 +21,25 @@
     </style>
   </head>
 <body>
+  <!--Loader Part-->
+  <div class="loader-container">
+    <div id="global">
+      <div class="mask" id="top">
+        <div class="plane"></div>
+      </div>
+      <div class="mask" id="middle-top">
+        <div class="plane"></div>
+      </div>
+      <div class="mask" id="middle-down">
+        <div class="plane"></div>
+      </div>
+      <div class="mask" id="bottom">
+        <div class="plane"></div>
+      </div>
+    </div>
+  </div>
+  <!--Loader Part-->
+  <div class="content-container">
     <header class="container">
         <nav class="navbar navbar-expand-lg bg-light">
           <div class="container-fluid">
@@ -28,6 +47,7 @@
               October Math Gems</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
+              <i class="fa fa-bars" style="color:black", width:17px></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class=" nav nav-tabs navbar-nav me-auto mb-2 mb-lg-0">
@@ -54,7 +74,7 @@
         <div id="problems_table_page">
        <!-- <h2>Recent Problems</h2> -->
        <br>
-        <p>Our handout “Top 22 stratigies you will use in math contests” was a step towards influencing problem solving. This handout was the result of careful hours spent by math-loving students who are of the top nationally in the field. The handout is composed of different theorems and strategies that are encountered frequently in contests and math Olympiads. Not only does the handout cover examples for each strategy and essential theorem, but it also provides numerous exercises from real contests for students to challenge themselves and see how they improve.
+        <p class="Common2">Our handout “Top 22 stratigies you will use in math contests” was a step towards influencing problem solving. This handout was the result of careful hours spent by math-loving students who are of the top nationally in the field. The handout is composed of different theorems and strategies that are encountered frequently in contests and math Olympiads. Not only does the handout cover examples for each strategy and essential theorem, but it also provides numerous exercises from real contests for students to challenge themselves and see how they improve.
           While many textbooks and handouts exist for Olympiad preparation, it is rare to find one that comprises different problem-solving techniques from different areas in one document, and more importantly, in a concise yet effective way; in just over 44 pages, you could have a great idea about the most prominent ways to solve challenging math problems.
           Institute of STEM Education endeavors to ease for students the access of information that could take hours to reach to otherwise. Moreover, quality is taken care of, by maintaining professionality standards and producing high-quality materials any student could benefit from or enjoy. We hope that this handout is no exception, and that you have a nice problem-solving trip reading it.
           </p>
@@ -69,7 +89,22 @@
         <script src="bootstrap.js">
           
         </script>
-       
+        <footer class="footer">
+          <div class="footer-items">
+          <p class="footer-title">Developed by: <span> Maths Gems Web Branch</span></p>
+          <div class="social-icons">
+              <p class="jh">Web Developers: Ahmed Wael | Ahmed Shalaby | Hassan <br>UI/UX: Mahmoud Essam</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script>
+        $(window).load(function () {
+          $(".loader-container").delay(3000).fadeOut("slow");
+          $(".content-container").delay(3000).fadeIn("slow");
+        });
+      </script>
 </body>
      
 </html>
